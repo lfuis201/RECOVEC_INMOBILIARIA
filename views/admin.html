@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovec</title>
+    <script type="module" src="../js/CrearPropiedad.js"></script>
+
+</head>
+<body>
+  <div id="login" class="container">
+
+    <h1 class="brand"><span>Panel de Inicio de sesion Recovec</span></h1>
+  
+    <div class="wrapper">
+  
+      <!-- COMPANY INFORMATION -->
+      <div  class="company-info">
+        <h3>Inicio de sesion</h3>
+      </div>
+      <!-- End .company-info -->
+  
+      <!-- CONTACT FORM -->
+      <div class="contact">
+        <h3>Acceso por email</h3>
+  
+        <form id="contact-form">
+          <p>
+            <label>Correo electronico</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+  
+          <p>
+            <label>clave de acceso</label>
+            <input type="password" name="phone" id="phone">
+          </p>
+          
+          <p class="full">
+            <button type="submit">Iniciar sesion</button>
+          </p>
+  
+        </form>
+        <!-- End #contact-form -->
+
+      </div>
+      <!-- End .contact -->
+  
+    </div>
+    <!-- End .wrapper -->
+    
+  </div>
+  <!-- End .container -->
+
+
+
+
+
+
+
+  <div  id="inventory_add" class="container">
+
+    <h1 class="brand"><span>Panel de modificacion Recovec</span></h1>
+  
+    <div class="wrapper">
+  
+      <!-- COMPANY INFORMATION -->
+      <div  class="company-info">
+        <form id="form2">
+        <h3>Ver, modificar y agregar stock</h3>
+        <div class="container p-y-1">
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+              <div class="form-group inputDnD">
+                 <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+           <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+          <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+             <div class="form-group inputDnD">
+               <input type="file" class="form-control-file text-success font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+            <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+               <div class="form-group inputDnD">
+                 <input type="file" class="form-control-file text-warning font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+            <div class="row m-b-1">
+            <div class="col-sm-6 offset-sm-3">
+               <div class="form-group inputDnD">
+                <input type="file" class="form-control-file text-danger font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      </div>
+      <!-- End .company-info -->
+  
+      <!-- CONTACT FORM -->
+      <div class="contact">
+        <h3 id="house-title" >Llena todos los espacios</h3>
+  
+        <form id="inventory-form">
+  
+          <p>
+            <label>Nombre de la propiedad</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </p>
+      
+          <p>
+            <label>Tipo</label>
+            <input type="text" name="tipo" id="tipo" required>
+          </p>
+      
+          <p>
+            <label>Precio</label>
+            <input type="number" name="precio" id="precio" required>
+          </p>
+      
+          <p>
+            <label>Dirección</label>
+            <input type="text" name="direccion" id="direccion" required>
+          </p>
+      
+          <p>
+            <label>Habitaciones</label>
+            <input type="number" name="habitaciones" id="habitaciones" required>
+          </p>
+      
+          <p>
+            <label>Baños</label>
+            <input type="number" name="baños" id="baños" required>
+          </p>
+      
+          <p>
+            <label>Área</label>
+            <input type="text" name="area" id="area" required>
+          </p>
+      
+          <p>
+            <label>Piso</label>
+            <input type="number" name="piso" id="piso" required>
+          </p>
+      
+          <p>
+            <label>Estacionamiento</label>
+            <input type="number" name="estacionamiento" id="estacionamiento" required>
+          </p>
+  
+          
+          <p>
+            <label>Foto</label>
+            <input type="file" name="foto" id="foto" accept="image/*" required>
+          </p>
+      
+
+            <!-- <div class="input-file-container">  
+              <input class="input-file" id="my-file" type="file" multiple>
+              <label tabindex="0" for="my-file" class="input-file-trigger">Subir imagenes...</label>
+            </div>
+            <p class="file-return"></p> -->
+          
+           
+         
+            <p class="full">
+              <button type="submit">Agregar</button>
+            </p>
+         
+  
+          
+  
+        </form>
+        <!-- End #contact-form -->
+
+      </div>
+      <!-- End .contact -->
+  
+    </div>
+    <!-- End .wrapper -->
+    
+  </div>
+  <!-- End .container -->
+
+
+
+
+
+
+  <style>
+    .inputDnD .form-control-file {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 6em;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: #007bff;
+    box-shadow: 0 0 5px solid currentColor;
+  }
+  .inputDnD .form-control-file:before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: 100%;
+    min-height: 6em;
+    line-height: 2em;
+    padding-top: 1.5em;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    border: solid 1px #627EDC;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+  }
+  .inputDnD .form-control-file:hover:before {
+    border-style: solid;
+    box-shadow: inset 0px 0px 0px 0.25em #000000;
+  }
+  
+  </style>
+  <script>
+    function readUrl(input) {
+    
+    if (input.files && input.files[0]) {
+      let reader = new FileReader();
+      reader.onload = (e) => {
+        let imgData = e.target.result;
+        let imgName = input.files[0].name;
+        input.setAttribute("data-title", imgName);
+        console.log(e.target.result);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;" id="inventorylist" class="container">
+    <h1 class="brand"><span>Panel de inventario Recovec</span></h1>
+    <div class="wrapper">
+  
+    <!-- COMPANY INFORMATION -->
+    <div  class="company-info">
+      <h3>Ve el contenido en stock</h3>
+    </div>
+    <!-- End .company-info -->
+
+    <!-- CONTACT FORM -->
+    <div class="contact">
+      <h3 id="house-title" >Control</h3>
+
+      <form id="inventory-form">
+
+
+        <a href="#">
+          <div class="row">
+          <div   class="col-md-6" id="tasks-container"></div>
+          </div>
+        
+    </a>
+    
+
+</form>
+<!-- End #contact-form -->
+
+</div>
+<!-- End .contact -->
+
+</div>
+<!-- End .wrapper -->
+
+</div>
+<!-- End .container -->
+
+  <style>
+        /* Estilos para la lista */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+
+
+
+
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #3952a3;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Yantramanav', sans-serif;
+  padding: 1em;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background: #C3C9DD;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+  background: #dcdfea;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+
+
+.input-file-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+} 
+.js .input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: #627EDC;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Ubicacion del archivo: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.file-return2 {
+  margin: 0;
+}
+.file-return2:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return2 {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return2:not(:empty):before {
+  content: "Ubicacion del archivo: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.file-return3 {
+  margin: 0;
+}
+.file-return3:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return3 {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return3:not(:empty):before {
+  content: "Ubicacion del archivo: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.file-return4 {
+  margin: 0;
+}
+.file-return4:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return4 {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return4:not(:empty):before {
+  content: "Ubicacion del archivo: ";
+  font-style: normal;
+  font-weight: normal;
+}
+.file-return5 {
+  margin: 0;
+}
+.file-return5:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return5 {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return5:not(:empty):before {
+  content: "Ubicacion del archivo: ";
+  font-style: normal;
+  font-weight: normal;
+}
+  </style>
+
+  <script>
+    document.querySelector("html").classList.add('js');
+
+
+
+
+
+var fileInput  = document.querySelector( ".input-file" ),  
+    button     = document.querySelector( ".input-file-trigger" ),
+    the_return = document.querySelector(".file-return");
+    
+      
+button.addEventListener( "keydown", function( event ) {  
+    if ( event.keyCode == 13 || event.keyCode == 32 ) {  
+        fileInput.focus();  
+    }  
+});
+button.addEventListener( "click", function( event ) {
+   fileInput.focus();
+   return false;
+});  
+fileInput.addEventListener( "change", function( event ) {  
+    the_return.innerHTML = this.value;  
+    
+});  
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

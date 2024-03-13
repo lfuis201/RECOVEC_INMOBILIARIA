@@ -1,0 +1,19 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-gap: 2em;
+  padding: 2em;
+  pointer-events: none;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  border-radius: 0.25em;
+  transition: 250ms 50ms;
+  pointer-events: auto;
+}
+.gallery:hover img:not(:hover) {
+  filter: saturate(0.2) opacity(0.5);
+}
+
+/*# sourceMappingURL=gallery.css.map */
